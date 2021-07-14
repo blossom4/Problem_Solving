@@ -16,7 +16,8 @@ const input = (() => {
 ////////////////////////////////////////////////////////////
 
 
-// #1001 Baekjoon JavaScript 
+// Baekjoon JavaScript 
+// #1001  A - B
 const AB = input().split(' ')
 const res = Number(AB[0]) - Number(AB[1])
 

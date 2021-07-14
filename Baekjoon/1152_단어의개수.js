@@ -16,7 +16,8 @@ const input = (() => {
 ////////////////////////////////////////////////////////////
 
 
-// #1152 Baekjoon JavaScript 
+// Baekjoon JavaScript 
+// #1152  단어의 개수
 const words = input().trim().split(' ')
 
 // ' '을 기준으로 나눴으므로, 공백은 배열에 넣으면 ' '가 아니라 ''로 들어간다.
