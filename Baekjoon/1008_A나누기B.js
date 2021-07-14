@@ -16,8 +16,8 @@ const input = (() => {
 ////////////////////////////////////////////////////////////
 
 
-// #1000 Baekjoon JavaScript 
+// #1008 Baekjoon JavaScript 
 const AB = input().split(' ')
-const res = Number(AB[0]) + Number(AB[1])
+const res = Number(AB[0]) / Number(AB[1])
 
 console.log(res)
