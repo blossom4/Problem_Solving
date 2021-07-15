@@ -5,8 +5,7 @@ const fs = require("fs");
 const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
-    : `walking
-down`
+    : ``
 ).split("\n");
 
 const input = (() => {

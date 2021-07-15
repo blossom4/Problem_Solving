@@ -18,6 +18,10 @@ const input = (() => {
 
 // Baekjoon JavaScript
 // #1157  단어공부
+
+// https://www.acmicpc.net/problem/1157
+
+
 const alpha = input().toUpperCase().split('').sort()
 const alpha_arr = []
 let cnt = 0

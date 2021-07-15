@@ -18,6 +18,10 @@ const input = (() => {
 
 // Baekjoon JavaScript 
 // #1000  A + B 
+
+// https://www.acmicpc.net/problem/1000
+
+
 const AB = input().split(' ')
 const res = Number(AB[0]) + Number(AB[1])
 

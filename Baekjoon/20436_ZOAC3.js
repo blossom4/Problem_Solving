@@ -18,7 +18,11 @@ const input = (() => {
 
 
 // Baekjoon JavaScript
-// #20436  ZOAC3.js
+// #20436  ZOAC 3
+
+// https://www.acmicpc.net/problem/20436
+
+
 // 해당 문자 s의 키보드 위에서의 (x,y)좌표를 array형태로 return
 var findIndex = function (s) {
   const keyboard = ['zxcvbnm', 'asdfghjkl', 'qwertyuiop']
