@@ -6,7 +6,7 @@ const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
     : `walking
-nia`
+down`
 ).split("\n");
 
 const input = (() => {
@@ -19,6 +19,10 @@ const input = (() => {
 
 // Baekjoon JavaScript
 // #1622  공통순열
+
+// https://www.acmicpc.net/problem/1622
+
+
 const a = input().split('')
 const b = input().split('')
 const arr = []
