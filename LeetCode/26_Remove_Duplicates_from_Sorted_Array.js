@@ -1,0 +1,17 @@
+// LeetCode JavaScript
+// 26. Remove Duplicates from Sorted Array
+
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+
+// @param {number[]} nums
+// @return {number}
+ var removeDuplicates = function(nums) {    
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i + 1] == nums[i]) {
+      nums.splice(i--, 1)
+    } 
+  }
+
+  return nums.length
+};

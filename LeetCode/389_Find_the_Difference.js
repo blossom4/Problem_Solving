@@ -1,17 +1,12 @@
-## 389. Find the Difference
+// LeetCode JavaScript
+// 389. Find the Difference
+
+// https://leetcode.com/problems/find-the-difference/
 
 
-
-https://leetcode.com/problems/find-the-difference/
-
-
-
-```javascript
-/**
- * @param {string} s
- * @param {string} t
- * @return {character}
- */
+// @param {string} s
+// @param {string} t
+// @return {character}
 var findTheDifference = function(s, t) {
   const s_arr = s.split('').sort()
   const t_arr = t.split('').sort()
@@ -24,5 +19,3 @@ var findTheDifference = function(s, t) {
   }
   return t_arr[s_len]
 };
-```
-

@@ -3,12 +3,12 @@
 
 // https://leetcode.com/problems/merge-sorted-array/
 
+
 // @param {number[]} nums1
 // @param {number} m
 // @param {number[]} nums2
 // @param {number} n
 // @return {void} Do not return anything, modify nums1 in-place instead.
-
 var merge = function(nums1, nums2, m, n) {
   // sort() 함수
   // 1. return < 0: a가 b의 앞에 있어야한다.
