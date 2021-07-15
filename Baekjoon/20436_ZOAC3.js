@@ -1,17 +1,12 @@
-## 20436. ZOAC 3
+////////////////////////////////////////////////////////////
 
-
-
-https://www.acmicpc.net/problem/20436
-
-
-
-```javascript
+// Input and Output
 const fs = require("fs");
 const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
-    : ``
+    : `walking
+nia`
 ).split("\n");
 
 const input = (() => {
@@ -19,6 +14,11 @@ const input = (() => {
   return () => stdin[line++];
 })();
 
+////////////////////////////////////////////////////////////
+
+
+// Baekjoon JavaScript
+// #20436  ZOAC3.js
 // 해당 문자 s의 키보드 위에서의 (x,y)좌표를 array형태로 return
 var findIndex = function (s) {
   const keyboard = ['zxcvbnm', 'asdfghjkl', 'qwertyuiop']
@@ -57,7 +57,3 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(total)
-```
-
-
-

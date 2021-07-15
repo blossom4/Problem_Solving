@@ -1,17 +1,12 @@
-### 14467. 소가 길을 건너간 이유 1
+////////////////////////////////////////////////////////////
 
-
-
-https://www.acmicpc.net/problem/14467
-
-
-
-```javascript
+// Input and Output
 const fs = require("fs");
 const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
-    : ``
+    : `walking
+nia`
 ).split("\n");
 
 const input = (() => {
@@ -19,6 +14,11 @@ const input = (() => {
   return () => stdin[line++];
 })();
 
+////////////////////////////////////////////////////////////
+
+
+// Baekjoon JavaScript
+// #11467  소가 길을 건너간 이유 1
 const N = Number(input())
 const cows = new Array(11).fill(-1)
 let cnt = 0
@@ -38,5 +38,3 @@ for (let i = 0; i < N; i++) {
 }
 
 console.log(cnt)
-```
-
