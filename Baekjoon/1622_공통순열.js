@@ -5,12 +5,7 @@ const fs = require("fs");
 const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
-    : `pretty
-women
-walking
-down
-the
-street`
+    : ``
 ).split("\n");
 
 const input = (() => {
@@ -30,13 +25,13 @@ while (1) {
   // 입력 a와 b에 대하여 undefined나 null이 들어오면 즉시 종료시키고,
   // 둘중 하나라도 빈문자열 ''이 들어오면 결과는 ''이므로 출력하고 다음 case로 넘어가도록 했다.
   let a = input()
-  if (a == undefined || a == null) {
+  if (a == null) {
     break
   }
   a = a.split('')
 
   let b = input()
-  if (b == undefined || b == null) {
+  if (b == null) {
     break
   }
   b = b.split('')
