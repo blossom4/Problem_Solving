@@ -1,3 +1,5 @@
+// 조영신
+
 ////////////////////////////////////////////////////////////
 
 // Input and Output
@@ -26,32 +28,29 @@ const NQ = input().split(' ').map(Number)
 const cows = input().split(' ').map(Number)
 const changed = input().split(' ').map(Number)
 
-// 길이가 4인 배열값의 곱의 합을 구하는 함수
-const multipy_4 = function (arr) {
-  let res = 0
-  for (let i = 0; i < 4; i++) {
-    res = arr[0] * arr[1] * arr[2] * arr[3]
-  }
-
-  return res
-}
-
+// 장난을 치기전 품질계산값과 각 항의 합의 값을 sum_arr로 미리 저장해둔다.
 let total = 0
-for (let i = 0; i < NQ[1]; i++) {
-  // 장난친 index의 소의 품질값이 *= -1을 해준다.
-  cows[changed[i] - 1] = cows[changed[i] - 1] * -1
-  // 원순열을 만들기위해 앞의 3개요소를 뒤에 더하고
-  // 계산을 마치고 다시 빼준다.
-  for (let i = 0; i < 3; i++) cows.push(cows[i])
-
-  // 앞에서부터 4개씩 배열을 자르면서 각요소의 곱의 합을 total에 더해간다.
-  // 한바퀴를 돌고나면 total 값을 출력한다.
-  for (let j = 0; j < cows.length - 3; j++) {
-    total += multipy_4(cows.slice(j, j + 4))
-  }
-  console.log(total)
-
-  // cows 배열을 원래대로 돌리고 다음 장난에 대한 total값을 계산하기 위해 초기화한다.
-  for (let i = 0; i < 3; i++) cows.pop()
-  total = 0
+const sum_arr = new Array(cows.length).fill(0)
+const n = cows.length
+// 연속된 4마리의 소의 값을 더해서 각 항의 계산값을 sum_arr에 저장
+// total에는 현재 각 항의 총합을 저장한다.
+for (let i = 0; i < n; i++) {
+  sum_arr[i] = cows[i % n] * cows[(i + 1) % n] * cows[(i + 2) % n] * cows[(i + 3) % n]
+  total += sum_arr[i]
 }
+
+let ans = []
+// 1. 장난을 친 번호를 changed[i - 1]로 지정하면 그 index 포함 4개의 앞쪽의 항들의 값의 부호값이 바뀐다.
+// 2. 4개의 index의 값의 부호를 바꾸어주고 부호가 바뀌면 기존의 total 값에 해당 index의 새로운값이 두 번 더해지는 것이므로
+//    total += sum_arr[a] * 2를 해주고 답을 array(ans)에 저장해준다.
+for (let i = 0; i < NQ[1]; i++) {
+  for (let j = 0; j < 4; j++) {
+    let index = changed[i] - 1 - j
+    // 바꾸어야하는 index가 0보다 작아지면 배열의 맨 뒤index로 가야하므로 +n을 해주어서 index를 맞췄다.
+    if (index < 0) index += n
+    sum_arr[index] *= -1
+    total += sum_arr[index] * 2
+  }
+  ans.push(total)
+}
+console.log(ans.join('\n'))
