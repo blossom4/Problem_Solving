@@ -26,5 +26,3 @@ var convert = function(s, numRows) {
   for (let i = 0; i < numRows; i++) arr[i] = arr[i].join('')
   return arr.join('')
 }
-
-console.log(convert(s, numRows))
