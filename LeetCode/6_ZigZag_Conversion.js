@@ -13,11 +13,10 @@ var convert = function(s, numRows) {
 
   for (let i = 0; i < s.length; i++) {
     // numRows번 세로로 내려가고 (numRows - 2)번 대각선 위로 올라가는 것을 반복한다.
-    // 
-    // zigzag가 세로로 내려가는 경우
+    // 1. zigzag가 세로로 내려가는 경우
     if (i % (numRows * 2 - 2) < numRows) {
       arr[i % (numRows * 2 - 2)].push(s[i])
-    // zigzag가 대각선 위로 올라가는 경우
+    // 2. zigzag가 대각선 위로 올라가는 경우
     } else {
       arr[numRows - 1 - ((i % (numRows * 2 - 2)) - numRows + 1)].push(s[i])
     }
