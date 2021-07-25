@@ -6,9 +6,7 @@ const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
     // Test-Case Input Between Backticks(``)
-    : `150
-266
-427`
+    : ``
 ).split("\n");
 
 const input = (() => {
