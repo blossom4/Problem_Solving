@@ -18,12 +18,19 @@ const input = (() => {
 
 
 // Baekjoon JavaScript 
-// #1000  A + B 
+// #2562  최댓값
 
-// https://www.acmicpc.net/problem/1000
+// https://www.acmicpc.net/problem/2562
 
+let maxNumber = -1
+let maxNumberIndex = -1
+for (let i = 1; i < 10; i++) {
+  let number = Number(input())
+  if (number > maxNumber) {
+    maxNumber = number
+    maxNumberIndex = i
+  }
+}
 
-const AB = input().split(' ')
-const res = Number(AB[0]) + Number(AB[1])
-
-console.log(res)
+console.log(maxNumber)
+console.log(maxNumberIndex)

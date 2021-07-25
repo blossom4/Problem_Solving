@@ -1,12 +1,12 @@
 ////////////////////////////////////////////////////////////
 
-// Input and Output
+// Input Templete
 const fs = require("fs");
 const stdin = (
   process.platform === "linux"
     ? fs.readFileSync("/dev/stdin").toString()
-    : `walking
-nia`
+    // Test-Case Input Between Backticks(``)
+    : ``
 ).split("\n");
 
 const input = (() => {
