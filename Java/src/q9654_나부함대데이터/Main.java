@@ -1,4 +1,4 @@
-package q9654_Ё╙╨нгт╢К╣╔юлем;
+package q9654_К┌≤К╤─М∙╗К▄─К█╟Л²╢М└╟;
 
 import java.io.IOException;
 
