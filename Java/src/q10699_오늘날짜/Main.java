@@ -1,4 +1,4 @@
-package q10699_¿À´Ã³¯Â¥;
+package q10699_ì˜¤ëŠ˜ë‚ ì§œ;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
