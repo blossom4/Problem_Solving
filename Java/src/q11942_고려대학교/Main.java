@@ -1,10 +1,10 @@
-package q11942_°í·Á´ëÇĞ±³;
+package q11942_ê³ ë ¤ëŒ€í•™êµ;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("°í·Á´ëÇĞ±³");
+		System.out.println("ê³ ë ¤ëŒ€í•™êµ");
 	}
 
 }
