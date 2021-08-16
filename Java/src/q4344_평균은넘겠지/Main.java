@@ -1,7 +1,6 @@
 package q4344_평균은넘겠지;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
