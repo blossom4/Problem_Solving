@@ -1,4 +1,4 @@
-package q0_template;
+package q16430_Á¦¸®¿ÍÅè;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,11 +11,9 @@ public class Main {
 		String[] input = br.readLine().split(" ");
 		int A = Integer.parseInt(input[0]);
 		int B = Integer.parseInt(input[1]);
-		int V = Integer.parseInt(input[2]);
 		
-		double result = Math.ceil((double)(V - A) / (A - B)) + 1;
-		
-		System.out.println((int)result);
+		input[0] = Integer.toString(B - A);
+		System.out.println(String.join(" ", input));
 	}
 
 }
