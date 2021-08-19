@@ -1,4 +1,4 @@
-package q0_template;
+package q16170_오늘의날짜는;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +8,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 	}
 
 }
