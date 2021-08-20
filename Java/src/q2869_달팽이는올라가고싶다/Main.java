@@ -1,21 +1,21 @@
-package q11382_²¿¸¶Á¤¹Î;
+package q2869_´ÞÆØÀÌ´Â¿Ã¶ó°¡°í½Í´Ù;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] input = br.readLine().split(" ");
-		BigInteger A = new BigInteger(input[0]);
-		BigInteger B = new BigInteger(input[1]);
-		BigInteger C = new BigInteger(input[2]);
+		int A = Integer.parseInt(input[0]);
+		int B = Integer.parseInt(input[1]);
+		int V = Integer.parseInt(input[2]);
 		
-		System.out.println(A.add(B).add(C));
+		double result = Math.ceil((double)(V - A) / (A - B)) + 1;
+		
+		System.out.println((int)result);
 	}
 
 }
