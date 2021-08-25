@@ -1,4 +1,4 @@
-package q5554_½ÉºÎ¸§°¡´Â±æ;
+package q5554_ì‹¬ë¶€ë¦„ê°€ëŠ”ê¸¸;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int sum = 0;
 		
-		// ÃÑ ¸îÃÊ°¡ °É¸®´ÂÁö ±¸ÇÏ±âÀ§ÇØ ÀÔ·ÂµÈ °ªÀ» ¸ğµÎ ´õÇÑ´Ù.
+		// ì´ ëª‡ì´ˆê°€ ê±¸ë¦¬ëŠ”ì§€ êµ¬í•˜ê¸°ìœ„í•´ ì…ë ¥ëœ ê°’ì„ ëª¨ë‘ ë”í•œë‹¤.
 		for (int i = 0; i < 4; i++) {
 			sum += Integer.parseInt(br.readLine());
 		}

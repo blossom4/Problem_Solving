@@ -1,4 +1,4 @@
-package q4948_º£¸£Æ®¶û°øÁØ;
+package q4948_ë² ë¥´íŠ¸ë‘ê³µì¤€;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Main {
 	
-	// ¿¡¶ó½ºÅäÅ×³×½ºÀÇ Ã¼ÀÇ ¿ø¸®¸¦ ÀÌ¿ëÇÑ ¼Ò¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö
+	// ì—ë¼ìŠ¤í† í…Œë„¤ìŠ¤ì˜ ì²´ì˜ ì›ë¦¬ë¥¼ ì´ìš©í•œ ì†Œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜
 	public static boolean isPrimeNumber(int n) {
 		if (Math.sqrt((double)n) == Math.ceil(Math.sqrt((double)n))) return false;
 		
@@ -24,15 +24,15 @@ public class Main {
 
 		while (true) {
 			int cnt = 0;
-			// ÀÔ·ÂÀÌ 0ÀÌ µé¾î¿Ã ¶§±îÁö ¹İº¹ÇÏ°í 0ÀÌ µé¾î¿À¸é break
+			// ì…ë ¥ì´ 0ì´ ë“¤ì–´ì˜¬ ë•Œê¹Œì§€ ë°˜ë³µí•˜ê³  0ì´ ë“¤ì–´ì˜¤ë©´ break
 			int n = Integer.parseInt(br.readLine());
 			if (n == 0) break;
 			
-			// nº¸´Ù Å©°í 2n ÀÌÇÏÀÇ ¹üÀ§¿¡¼­ ¼Ò¼öÀÇ °³¼ö¸¦ ±¸ÇÑ´Ù.
+			// në³´ë‹¤ í¬ê³  2n ì´í•˜ì˜ ë²”ìœ„ì—ì„œ ì†Œìˆ˜ì˜ ê°œìˆ˜ë¥¼ êµ¬í•œë‹¤.
 			for (int i = n + 1; i < 2 * n + 1; i++) {
 				if (isPrimeNumber(i) == true) cnt++;
 			}
-			// results ArrayList¿¡ °á°úµéÀ» ÀúÀåÇÑ´Ù.
+			// results ArrayListì— ê²°ê³¼ë“¤ì„ ì €ì¥í•œë‹¤.
 			results.add(Integer.toString(cnt));
 		}
 		

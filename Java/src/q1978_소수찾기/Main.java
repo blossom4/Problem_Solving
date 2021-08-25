@@ -1,4 +1,4 @@
-package q1978_¼Ò¼öÃ£±â;
+package q1978_ì†Œìˆ˜ì°¾ê¸°;
 
 import java.io.BufferedReader;
 import java.io.IOException;

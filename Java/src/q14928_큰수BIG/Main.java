@@ -1,4 +1,4 @@
-package q14928_Å«¼öBIG;
+package q14928_í°ìˆ˜BIG;
 
 import java.io.BufferedReader;
 import java.io.IOException;

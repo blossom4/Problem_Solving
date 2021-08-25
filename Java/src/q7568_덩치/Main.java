@@ -1,4 +1,4 @@
-package q7568_µ¢Ä¡;
+package q7568_ë©ì¹˜;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Main {
 		int rank = 1;
 		String[] results = new String[N];
 		
-		// ¸ö¹«°Ô¿Í Å° ¹è¿­À» µû·Î ¸¸µé¾î¼­ N°³ ¸¸Å­ ÀÔ·ÂÀ» ¹Ş´Â´Ù.
+		// ëª¸ë¬´ê²Œì™€ í‚¤ ë°°ì—´ì„ ë”°ë¡œ ë§Œë“¤ì–´ì„œ Nê°œ ë§Œí¼ ì…ë ¥ì„ ë°›ëŠ”ë‹¤.
 		for (int i = 0; i < N; i++) {
 			String[] input = br.readLine().split(" ");
 			int x = Integer.parseInt(input[0]);
@@ -24,7 +24,7 @@ public class Main {
 			yArr[i] = y;
 		}
 		
-		// 2Áß for¹®À» µ¹¸é¼­ ÀÚ½Åº¸´Ù ¸ö¹«°Ô¿Í Å° ¸ğµÎ Å©¸é rank +1¾¿ ÇØ¼­ °¢°¢ÀÇ ÃÖÁ¾ ¼øÀ§¸¦ results ¹è¿­¿¡ ÀúÀåÇÑ´Ù.
+		// 2ì¤‘ forë¬¸ì„ ëŒë©´ì„œ ìì‹ ë³´ë‹¤ ëª¸ë¬´ê²Œì™€ í‚¤ ëª¨ë‘ í¬ë©´ rank +1ì”© í•´ì„œ ê°ê°ì˜ ìµœì¢… ìˆœìœ„ë¥¼ results ë°°ì—´ì— ì €ì¥í•œë‹¤.
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
 				if (xArr[i] < xArr[j] && yArr[i] < yArr[j]) rank++;

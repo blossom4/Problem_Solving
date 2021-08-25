@@ -1,4 +1,4 @@
-package q20492_¼¼±Ý;
+package q20492_ì„¸ê¸ˆ;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package q2388_±äÀÚ¸®°è»ê;
+package q2388_ê¸´ìë¦¬ê³„ì‚°;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -8,8 +8,8 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
-		// BigInteger´Â ÀÏ¹İÀûÀÎ operator·Î °è»êÇÒ ¼ö ¾ø´Ù.
-		// ´õÇÏ±â: add(), »©±â: subtract(), °öÇÏ±â: multiply(), ³ª´©±â: divde()
+		// BigIntegerëŠ” ì¼ë°˜ì ì¸ operatorë¡œ ê³„ì‚°í•  ìˆ˜ ì—†ë‹¤.
+		// ë”í•˜ê¸°: add(), ë¹¼ê¸°: subtract(), ê³±í•˜ê¸°: multiply(), ë‚˜ëˆ„ê¸°: divide()
 		BigInteger A = input.nextBigInteger();
 		BigInteger B = input.nextBigInteger();
 		

@@ -1,4 +1,4 @@
-package q1929_¼Ò¼ö±¸ÇÏ±â;
+package q1929_ì†Œìˆ˜êµ¬í•˜ê¸°;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 public class Main {
 	
-	// ¼Ò¼öÀÎÁö ±¸ÇÏ´Â ÇÔ¼ö
-	// ¿¡¶óÅä½ºÅ×³×½ºÀÇ Ã¼ÀÇ ¿ø¸®¿¡ ÀÇÇØ nÀÇ Á¦°ö±Ù ±îÁö¸¸ °Ë»çÇØµµ µÈ´Ù.
+	// ì†Œìˆ˜ì¸ì§€ êµ¬í•˜ëŠ” í•¨ìˆ˜
+	// ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ ì²´ì˜ ì›ë¦¬ì— ì˜í•´ nì˜ ì œê³±ê·¼ ê¹Œì§€ë§Œ ê²€ì‚¬í•´ë„ ëœë‹¤.
 	public static boolean isPrimeNumber(int n) {	
-		// ¿ÏÀüÁ¦°ö¼öÀÌ¸é Á¦¿ÜÇÑ´Ù.
+		// ì™„ì „ì œê³±ìˆ˜ì´ë©´ ì œì™¸í•œë‹¤.
 		if (Math.sqrt((double)n) == Math.ceil(Math.sqrt((double)n))) return false;
 		
 		for (int i = 2; i < Math.sqrt((double)n); i++) {
@@ -25,7 +25,7 @@ public class Main {
 		String[] input = br.readLine().split(" ");
 		int M = Integer.parseInt(input[0]);
 		int N = Integer.parseInt(input[1]);
-		// ¹üÀ§ ³»ÀÇ ¼Ò¼ö¸¦ ÀúÀåÇÒ ArrayList
+		// ë²”ìœ„ ë‚´ì˜ ì†Œìˆ˜ë¥¼ ì €ì¥í•  ArrayList
 		ArrayList<String> primeNumber = new ArrayList<String>();
 			
 		for (int i = M; i < N + 1; i++) {

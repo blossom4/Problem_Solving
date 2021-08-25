@@ -1,4 +1,4 @@
-package q1085_Á÷»ç°¢Çü¿¡¼­Å»Ãâ;
+package q1085_ì§ì‚¬ê°í˜•ì—ì„œíƒˆì¶œ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,10 +14,10 @@ public class Main {
 		int y = Integer.parseInt(input[1]);
 		int w = Integer.parseInt(input[2]);
 		int h = Integer.parseInt(input[3]);
-		// °æ°è±îÁöÀÇ ³× ¹æÇâ °Å¸®¸¦ arr ¹è¿­¿¡ ÀúÀåÇÑ´Ù.
+		// ê²½ê³„ê¹Œì§€ì˜ ë„¤ ë°©í–¥ ê±°ë¦¬ë¥¼ arr ë°°ì—´ì— ì €ì¥í•œë‹¤.
 		int[] arr = {x, y, (w - x), (h - y)};
 
-		// ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÏ¸é 0¹ø Â° indexÀÇ ¿ä¼Ò°¡ ÃÖ¼Ò°ªÀÌ´Ù.
+		// ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ë©´ 0ë²ˆ ì§¸ indexì˜ ìš”ì†Œê°€ ìµœì†Œê°’ì´ë‹¤.
 		Arrays.sort(arr);
 		System.out.println(arr[0]);
 	}

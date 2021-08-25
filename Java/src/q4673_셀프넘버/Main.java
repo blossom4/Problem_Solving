@@ -1,26 +1,26 @@
-package q4673_¼¿ÇÁ³Ñ¹ö;
+package q4673_ì…€í”„ë„˜ë²„;
 
 import java.io.IOException;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		// 10001ÀÎ array ÃÊ±âÈ­
+		// 10001ì¸ array ì´ˆê¸°í™”
 		int[] arr = new int[10001];
 		arr[0] = 1;
 		
-		// 10000ÀÌ ³ÑÀ¸¸é °è»êÇÒ ÇÊ¿ä°¡ ¾øÀ¸¹Ç·Î ÀÌÇÏ °ª¿¡ ´ëÇØ¼­¸¸ ¼¿ÇÁ³Ñ¹ö¸¦ ±¸ÇØ¼­ ÇØ´ç index¿¡ 1À» ³Ö¾îÁØ´Ù.
+		// 10000ì´ ë„˜ìœ¼ë©´ ê³„ì‚°í•  í•„ìš”ê°€ ì—†ìœ¼ë¯€ë¡œ ì´í•˜ ê°’ì— ëŒ€í•´ì„œë§Œ ì…€í”„ë„˜ë²„ë¥¼ êµ¬í•´ì„œ í•´ë‹¹ indexì— 1ì„ ë„£ì–´ì¤€ë‹¤.
 		for (int i = 1; i < 10001; i++) {
 			if (checkSelfNumber(i) < 10001) arr[checkSelfNumber(i)] = 1;
 		}
 		
-		// 1 ~ 10000±îÁö µ¹¸é¼­ ¼¿ÇÁ³Ñ¹ö¿¡ ÇÑ¹øµµ ÇØ´çµÇÁö ¾ÊÀº index¸¦ Ãâ·ÂÇÑ´Ù.
+		// 1 ~ 10000ê¹Œì§€ ëŒë©´ì„œ ì…€í”„ë„˜ë²„ì— í•œë²ˆë„ í•´ë‹¹ë˜ì§€ ì•Šì€ indexë¥¼ ì¶œë ¥í•œë‹¤.
 		for (int i = 0; i < 10001; i++) {
 			if (arr[i] == 0) System.out.println(i);				
 		}
 	}
 	
-	// ¼¿ÇÁ³Ñ¹ö ±¸ÇÏ´Â ÇÔ¼ö
+	// ì…€í”„ë„˜ë²„ êµ¬í•˜ëŠ” í•¨ìˆ˜
 	public static int checkSelfNumber(int n) {
 		int sum = n;
 		

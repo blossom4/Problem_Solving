@@ -1,4 +1,4 @@
-package q2839_¼³ÅÁ¹è´Þ;
+package q2839_ì„¤íƒ•ë°°ë‹¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,13 +13,13 @@ public class Main {
 		int three = 0;
 		int result = -1;
 		
-		// NÀÌ 5·Î ³ª´©¾î ¶³¾îÁö¸é ¸òÀÌ ÃÖ¼ÒºÀÁö ¼ö ÀÌ´Ù. 
+		// Nì´ 5ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ë©´ ëª«ì´ ìµœì†Œë´‰ì§€ ìˆ˜ ì´ë‹¤. 
 		if (N % 5 == 0) result = five;
 		else {
-			// 5kgºÀÁö ¼ö¸¦ ÇÏ³ª¾¿ ÁÙ¿©°¡¸é¼­ 3kgºÀÁö¸¦ ´õÇØ¼­ Á¶°ÇÀ» È®ÀÎÇÑ´Ù.
+			// 5kgë´‰ì§€ ìˆ˜ë¥¼ í•˜ë‚˜ì”© ì¤„ì—¬ê°€ë©´ì„œ 3kgë´‰ì§€ë¥¼ ë”í•´ì„œ ì¡°ê±´ì„ í™•ì¸í•œë‹¤.
 			while (five >= 0) {
-				// 5kgºÀÁö ¼ö¿Í 3kgºÀÁö ¼ö°¡ Nº¸´Ù ÀûÀ¸¸é 5kgºÀÁö¸¦ ÇÏ³ª¾¿ »©¸é¼­ 3kg ºÀÁö¸¦ °°¾ÆÁú ¶§±îÁö ´õÇÑ´Ù.
-				// ÀÌ ¶§ ¸¸¾à 3kgºÀÁö¸¦ ´õÇÏ´Ù°¡ NÀ» ³Ñ¾î¼­¸é ºÒ°¡´ÉÇÑ °æ¿ìÀÇ ¼ö ÀÌ¹Ç·Î 5kgºÀÁö¸¦ ÇÏ³ª ´õ »©°í °Ë»ç¸¦ ¹Ýº¹ÇÑ´Ù.
+				// 5kgë´‰ì§€ ìˆ˜ì™€ 3kgë´‰ì§€ ìˆ˜ê°€ Në³´ë‹¤ ì ìœ¼ë©´ 5kgë´‰ì§€ë¥¼ í•˜ë‚˜ì”© ë¹¼ë©´ì„œ 3kg ë´‰ì§€ë¥¼ ê°™ì•„ì§ˆ ë•Œê¹Œì§€ ë”í•œë‹¤.
+				// ì´ ë•Œ ë§Œì•½ 3kgë´‰ì§€ë¥¼ ë”í•˜ë‹¤ê°€ Nì„ ë„˜ì–´ì„œë©´ ë¶ˆê°€ëŠ¥í•œ ê²½ìš°ì˜ ìˆ˜ ì´ë¯€ë¡œ 5kgë´‰ì§€ë¥¼ í•˜ë‚˜ ë” ë¹¼ê³  ê²€ì‚¬ë¥¼ ë°˜ë³µí•œë‹¤.
 				while ((five * 5 + three * 3) < N) {
 					if ((five * 5 + three * 3) == N) {
 						three++;
@@ -28,13 +28,13 @@ public class Main {
 					three++;
 				}
 				
-				// N°ú °°¾ÆÁ³À» ¶§ÀÇ °¢°¢ÀÇ ºÀÁö ¼ö¸¦ ´õÇØ¼­ result¿¡ ÀúÀåÇÏ°í break;
+				// Nê³¼ ê°™ì•„ì¡Œì„ ë•Œì˜ ê°ê°ì˜ ë´‰ì§€ ìˆ˜ë¥¼ ë”í•´ì„œ resultì— ì €ìž¥í•˜ê³  break;
 				if ((five * 5 + three * 3) == N) {
 					result = five + three;
 					break;
 				}
 				
-				// ÇÑ¹øµµ N°ú °°Àº ÀûÀÌ¾ø¾î¼­ resultÀÇ °ªÀ» °»½ÅÇÑÀûÀÌ ¾ø´Ù¸é ±âÁ¸°ª -1ÀÌ ±×´ë·Î ³ª¿À°Ô µÈ´Ù.
+				// í•œë²ˆë„ Nê³¼ ê°™ì€ ì ì´ì—†ì–´ì„œ resultì˜ ê°’ì„ ê°±ì‹ í•œì ì´ ì—†ë‹¤ë©´ ê¸°ì¡´ê°’ -1ì´ ê·¸ëŒ€ë¡œ ë‚˜ì˜¤ê²Œ ëœë‹¤.
 				five--;		
 			}
 		}

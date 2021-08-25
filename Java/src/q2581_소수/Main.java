@@ -1,4 +1,4 @@
-package q2581_¼Ò¼ö;
+package q2581_ì†Œìˆ˜;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ¼Ò¼öÀÎÁö ÆÇº°ÇÏ´Â ÇÔ¼ö
+	// ì†Œìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” í•¨ìˆ˜
 	public static boolean isPrimeNumber(int n) {
 		if (n == 1) return false;
 		
@@ -24,7 +24,7 @@ public class Main {
 		int total = 0;
 		int minNumber = 10001;
 		
-		// ¼Ò¼ö¸é total¿¡ ´õÇÏ°í ÇöÀç minNumberº¸´Ù ÀÛÀ¸¸é °ªÀ» ¹Ù²Û´Ù.
+		// ì†Œìˆ˜ë©´ totalì— ë”í•˜ê³  í˜„ì¬ minNumberë³´ë‹¤ ì‘ìœ¼ë©´ ê°’ì„ ë°”ê¾¼ë‹¤.
 		for (int i = M; i < N; i++) {
 			if (isPrimeNumber(i) == true) {
 				total += i;

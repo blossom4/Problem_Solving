@@ -1,4 +1,4 @@
-package q5338_╦╤юле╘╥н╪ргаф╝╥н╟М;
+package q5338_К╖┬Л²╢М│╛К║°Л├▄М■└М┼╦К║°ЙЁ═;
 
 import java.io.IOException;
 

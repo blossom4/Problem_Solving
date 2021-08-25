@@ -1,4 +1,4 @@
-package q18108_1998³â»ıÀÎ³»°¡ÅÂ±¹¿¡¼­´Â2541³â»ı;
+package q18108_1998ë…„ìƒì¸ë‚´ê°€íƒœêµ­ì—ì„œëŠ”2541ë…„ìƒ;
 
 import java.io.BufferedReader;
 import java.io.IOException;

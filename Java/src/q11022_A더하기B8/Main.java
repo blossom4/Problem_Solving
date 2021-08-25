@@ -1,4 +1,4 @@
-package q11022_A´õÇÏ±âB8;
+package q11022_Aë”í•˜ê¸°B8;
 
 import java.io.IOException;
 import java.util.Scanner;

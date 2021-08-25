@@ -1,4 +1,4 @@
-package q15596_Á¤¼öN°³ÀÇÇÕ;
+package q15596_ì •ìˆ˜Nê°œì˜í•©;
 
 public class Test {
     long sum(int[] a) {

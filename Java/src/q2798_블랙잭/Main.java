@@ -1,4 +1,4 @@
-package q2798_ºí·¢Àè;
+package q2798_ë¸”ë™ì­;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,15 +15,15 @@ public class Main {
 		int[] numbers = new int[N];
 		int max = -1;
 		
-		// ÀÔ·Â¹ŞÀº ¼ıÀÚµéÀ» int·Î Å¸ÀÔÀ» ¹Ù²Ù°í ¹è¿­¿¡ ÀúÀåÇÑ´Ù.
+		// ì…ë ¥ë°›ì€ ìˆ«ìë“¤ì„ ì •ìˆ˜ë¡œ íƒ€ì…ì„ ë°”ê¾¸ê³  ë°°ì—´ì— ì €ì¥í•œë‹¤.
 		for (int i = 0; i < N; i++) numbers[i] = Integer.parseInt(numbersStr[i]);
 		
-		// ¼ıÀÚ¹è¿­À» 3Áß for¹®À» µ¹¸é¼­ ¸ğµç °æ¿ìÀÇ ¼ö¸¦ Å½»öÇÑ´Ù.
+		// ìˆ«ìë°°ì—´ì„ 3ì¤‘ forë¬¸ì„ ëŒë©´ì„œ ëª¨ë“  ê²½ìš°ì˜ ìˆ˜ë¥¼ íƒìƒ‰í•œë‹¤.
 		for (int i = 0; i < N - 2; i++) {
 			for (int j = i + 1; j < N - 1; j++) {
 				for (int k = j + 1; k < N; k++) {
-					// MÀÌ ³Ñ¾î¹ö¸®¸é ºí·¢Àè Á¶°ÇÀ» ¸¸Á·ÇÏÁö ¸øÇÏ¹Ç·Î continue
-					// ÃÖ´ë°ªº¸´Ù Å©¸é °ªÀ» °»½ÅÇÑ´Ù.
+					// Mì´ ë„˜ì–´ë²„ë¦¬ë©´ ë¸”ë™ì­ ì¡°ê±´ì„ ë§Œì¡±í•˜ì§€ ëª»í•˜ë¯€ë¡œ continue
+					// ìµœëŒ€ê°’ë³´ë‹¤ í¬ë©´ ê°’ì„ ê°±ì‹ í•œë‹¤.
 					if (numbers[i] + numbers[j] + numbers[k] > M) continue;
 					if (numbers[i] + numbers[j] + numbers[k] > max) max = numbers[i] + numbers[j] + numbers[k];
 				}

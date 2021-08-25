@@ -1,4 +1,4 @@
-package q2914_ÀúÀÛ±Ç;
+package q2914_ì €ì‘ê¶Œ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,11 +8,11 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// Input A, I °ªÀ» ÀúÀåÇÑ ¹è¿­
+		// Input A, I ê°’ì„ ì €ì¥í•œ ë°°ì—´
 		String[] input_AI = br.readLine().split(" ");
 		int A = Integer.parseInt(input_AI[0]);
 		int I = Integer.parseInt(input_AI[1]);
-		// A * (I - 1) + 1À» ÇÏ¸é ÃÖ¼Ò°ªÀ» ±¸ÇÒ ¼ö ÀÖ´Ù.
+		// A * (I - 1) + 1ì„ í•˜ë©´ ìµœì†Œê°’ì„ êµ¬í•  ìˆ˜ ìˆë‹¤.
 		int result = A * (I - 1) + 1;
 		
 		

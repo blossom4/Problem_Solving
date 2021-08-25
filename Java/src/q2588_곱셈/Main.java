@@ -1,4 +1,4 @@
-package q2588_°ö¼À;
+package q2588_ê³±ì…ˆ;
 
 import java.io.IOException;
 import java.util.Scanner;

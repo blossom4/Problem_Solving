@@ -1,19 +1,18 @@
-package q1065_ÇÑ¼ö;
+package q01065_í•œìˆ˜;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 	
-	// ÇÑ¼öÀÎÁö °Ë»çÇÏ´Â ÇÔ¼ö
+	// í•œìˆ˜ì¸ì§€ ê²€ì‚¬í•˜ëŠ” í•¨ìˆ˜
 	public static int checkNumber(int n) {
-		// µÎ ÀÚ¸®¼ö ±îÁö´Â ÀÚ¸®¼ö Â÷ÀÌ°¡ ¾ø°Å³ª ÇÑ°³ ÀÌ¹Ç·Î Ç×»ó µîÂ÷¼ö¿­ÀÌ´Ù.
+		// ë‘ ìë¦¬ìˆ˜ ê¹Œì§€ëŠ” ìë¦¬ìˆ˜ ì°¨ì´ê°€ ì—†ê±°ë‚˜ í•œê°œ ì´ë¯€ë¡œ í•­ìƒ ë“±ì°¨ìˆ˜ì—´ì´ë‹¤.
 		if (n < 100) return 1;
 		
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
-		// °¢ ÀÚ¸®¼ö¸¦ ArrayList¿¡ ³Ö´Â´Ù.
+		// ê° ìë¦¬ìˆ˜ë¥¼ ArrayListì— ë„£ëŠ”ë‹¤.
 		while (n > 0) {
 			numbers.add(n % 10);
 			n /= 10;
@@ -22,7 +21,7 @@ public class Main {
 		int digit = numbers.size();
 		int x = numbers.get(0) - numbers.get(1);
 		int i = 1;
-		// ÀÚ¸®¼ö³¢¸®ÀÇ Â÷ÀÌ°¡ ÀÏÁ¤ÇÏ¸é while¹®À» Áö³ª°¡¼­ 1À» returnÇÏ°í, ±×·¸Áö ¾ÊÀº °æ¿ì 0À» returnÇÑ´Ù.
+		// ìë¦¬ìˆ˜ë¼ë¦¬ì˜ ì°¨ì´ê°€ ì¼ì •í•˜ë©´ whileë¬¸ì„ ì§€ë‚˜ê°€ì„œ 1ì„ returní•˜ê³ , ê·¸ë ‡ì§€ ì•Šì€ ê²½ìš° 0ì„ returní•œë‹¤.
 		while (i < digit - 1) {
 			if ((numbers.get(i) - numbers.get(i + 1)) != x) return 0;
 			i++;
@@ -39,7 +38,7 @@ public class Main {
 		arr[0] = 1;
 		int count = 0;
 		
-		// 1ºÎÅÍ ÁÖ¾îÁø ¼ö N±îÁö ÇÑ¼öÀÎÁö °Ë»çÇÏ¸é¼­ ¸ÂÀ»°æ¿ì count +1À» ÇØÁØ´Ù.
+		// 1ë¶€í„° ì£¼ì–´ì§„ ìˆ˜ Nê¹Œì§€ í•œìˆ˜ì¸ì§€ ê²€ì‚¬í•˜ë©´ì„œ ë§ì„ê²½ìš° count +1ì„ í•´ì¤€ë‹¤.
 		for (int i = 1; i < N + 1; i++) {
 			if (checkNumber(i) == 1) count++;
 		}

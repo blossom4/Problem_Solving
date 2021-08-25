@@ -1,4 +1,4 @@
-package q17256_´Ş´ŞÇÔÀÌ³ÑÃÄÈê·¯;
+package q17256_ë‹¬ë‹¬í•¨ì´ë„˜ì³í˜ëŸ¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package q1712_���ͺб���;
+package q1712_손익분기점;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,9 +15,9 @@ public class Main {
 		int count = 0;
 		int profit = C - B;
 		
-		// ���ͺб����� �ѱ�� ������ �ݺ��Ѵ�.
+		// 손익분기점을 넘기기 전까지 반복한다.
 		while (A >= 0) {
-			// ���ʿ� �������� �Ǹź�뺸�� ���ų� ũ�ٸ� ���ͺб����� �ѱ� �� �����Ƿ� break
+			// 애초에 생산비용이 판매비용보다 같거나 크다면 손익분기점을 넘길 수 없으므로 break
 			if (profit <= 0) {
 				count = -1;
 				break;

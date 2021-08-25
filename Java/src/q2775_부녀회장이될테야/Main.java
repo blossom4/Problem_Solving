@@ -1,4 +1,4 @@
-package q2775_ºÎ³àÈ¸ÀåÀÌµÉÅ×¾ß;
+package q2775_ë¶€ë…€íšŒì¥ì´ë í…Œì•¼;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ¹è¿­ÀÌ ÀÖÀ» ¶§ Ã³À½ºÎÅÍ Æ¯Á¤ index±îÁöÀÇ ¿ä¼ÒÀÇ ÇÕÀ» returnÇÏ´Â ÇÔ¼ö
+	// ë°°ì—´ì´ ìˆì„ ë•Œ ì²˜ìŒë¶€í„° íŠ¹ì • indexê¹Œì§€ì˜ ìš”ì†Œì˜ í•©ì„ returní•˜ëŠ” í•¨ìˆ˜
 	public static int getSum(int[] arr, int index) {
 		int sum = 0;
 		
@@ -20,20 +20,20 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
-		// °¢ testcaseÀÇ °á°ú°ªÀ» ÀúÀåÇÏ´Â ¹è¿­
+		// ê° testcaseì˜ ê²°ê³¼ê°’ì„ ì €ì¥í•˜ëŠ” ë°°ì—´
 		String[] result = new String[T];
 		
 		for (int t = 0; t < T; t++) {
 			int k = Integer.parseInt(br.readLine());
 			int n = Integer.parseInt(br.readLine());
-			// °¢ÃşÀÇ È£¼öÀÇ ÁÖ°ÅÀÎ¿øÀ» ÀúÀåÇÏ´Â ¹è¿­
+			// ê°ì¸µì˜ í˜¸ìˆ˜ì˜ ì£¼ê±°ì¸ì›ì„ ì €ì¥í•˜ëŠ” ë°°ì—´
 			int[][] arr = new int[k + 1][n];
 			
-			// °¢ ÃşÀÇ ÇØ´ç È£¼ö¿¡ ÀüÃşÀÇ È£¼öÀÇ ¹è¿­ÀÇ ´õÇÑ °ªÀ» ÀúÀåÇÑ´Ù.
-			// getSum() ÇÔ¼ö´Â ¹è¿­ÀÌ ÀÖÀ» ¶§ Æ¯Á¤ index±îÁöÀÇ ÇÕÀ» returnÇÑ´Ù.
+			// ê° ì¸µì˜ í•´ë‹¹ í˜¸ìˆ˜ì— ì „ì¸µì˜ í˜¸ìˆ˜ì˜ ë°°ì—´ì˜ ë”í•œ ê°’ì„ ì €ì¥í•œë‹¤.
+			// getSum() í•¨ìˆ˜ëŠ” ë°°ì—´ì´ ìˆì„ ë•Œ íŠ¹ì • indexê¹Œì§€ì˜ í•©ì„ returní•œë‹¤.
 			for (int i = 0; i < k + 1; i++) {
 				for (int j = 0; j < n; j++) {
-					// 0Ãş¿¡¼­´Â ±×³É 1¸íºÎÅÍ +1¾¿ ´Ã¾î³­´Ù.
+					// 0ì¸µì—ì„œëŠ” ê·¸ëƒ¥ 1ëª…ë¶€í„° +1ì”© ëŠ˜ì–´ë‚œë‹¤.
 					if (i == 0) arr[i][j] = j + 1;
 					else arr[i][j] = getSum(arr[i - 1], j + 1);
 				}

@@ -1,4 +1,4 @@
-package q11653_¼ÒÀÎ¼öºĞÇØ;
+package q11653_ì†Œì¸ìˆ˜ë¶„í•´;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,19 +9,19 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// ¼ÒÀÎ¼ö¸¦ ÀúÀåÇÒ ArrayList
+		// ì†Œì¸ìˆ˜ë¥¼ ì €ì¥í•  ArrayList
 		ArrayList<String> factor = new ArrayList<String>();
 		int N = Integer.parseInt(br.readLine());
 		int i = 2;
 		
-		// ¼ÒÀÎ¼ö·Î ¸ğµÎ ³ª´²¼­ NÀÌ 1ÀÌ
+		// ì†Œì¸ìˆ˜ë¡œ ëª¨ë‘ ë‚˜ëˆ ì„œ Nì´ 1ì´
 		while (N != 1) {
-			// ¼ÒÀÎ¼öÀÌ¸é NÀ» ³ª´©°í ¼ÒÀÎ¼ö¸¦ ArrayList¿¡ ÀúÀåÇÑ´Ù.
+			// ì†Œì¸ìˆ˜ì´ë©´ Nì„ ë‚˜ëˆ„ê³  ì†Œì¸ìˆ˜ë¥¼ ArrayListì— ì €ì¥í•œë‹¤.
 			if (N % i == 0) {
 				N /= i;
 				factor.add(Integer.toString(i));
 			}
-			// ³ª´©¾î ¶³¾îÁö´Â ¼ÒÀÎ¼ö°¡ ¾Æ´Ï¸é +1ÇØ¼­ ¼ÒÀÎ¼ö °Ë»ç¸¦ ÁøÇàÇÑ´Ù.
+			// ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ì†Œì¸ìˆ˜ê°€ ì•„ë‹ˆë©´ +1í•´ì„œ ì†Œì¸ìˆ˜ ê²€ì‚¬ë¥¼ ì§„í–‰í•œë‹¤.
 			else i++;
 		}
 		

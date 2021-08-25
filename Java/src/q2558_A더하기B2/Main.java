@@ -1,4 +1,4 @@
-package q2558_A´õÇÏ±âB_2;
+package q2558_Aë”í•˜ê¸°B2;
 
 import java.io.IOException;
 import java.util.Scanner;

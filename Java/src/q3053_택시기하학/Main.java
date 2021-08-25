@@ -1,4 +1,4 @@
-package q3053_ÅÃ½Ã±âÇÏÇĞ;
+package q3053_íƒì‹œê¸°í•˜í•™;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,10 +11,10 @@ public class Main {
 		int R = Integer.parseInt(br.readLine());
 		String result = "";
 		
-		// À¯Å¬¸®µå ±âÇÏÇĞ¿¡¼­ ¿øÀÇ ³ĞÀÌ
+		// ìœ í´ë¦¬ë“œ ê¸°í•˜í•™ì—ì„œ ì›ì˜ ë„“ì´
 		result += Math.PI * Math.pow(R, 2);
 		result += "\n";
-		// ÅÃ½Ã ±âÇÏÇĞ¿¡¼­ ¿øÀÇ ³ĞÀÌ
+		// íƒì‹œ ê¸°í•˜í•™ì—ì„œ ì›ì˜ ë„“ì´
 		result += 2 * (Math.pow(R, 2));
 		
 		System.out.println(result);

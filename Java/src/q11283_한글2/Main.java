@@ -1,4 +1,4 @@
-package q11283_ÇÑ±Û2;
+package q11283_í•œê¸€2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Main {
 		
 		char result = input.charAt(0);
 		
-		// ÇÑ±ÛÀº ascii code»ó¿¡ 44032ºÎÅÍ  ¼ø¼­´ë·Î ÀúÀåµÇ¾îÀÖ´Ù.
+		// í•œê¸€ì€ ascii codeìƒì— 44032ë¶€í„°  ìˆœì„œëŒ€ë¡œ ì €ì¥ë˜ì–´ìˆë‹¤.
 		System.out.println(((int) result) - 44031);
 	}
 

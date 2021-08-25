@@ -1,4 +1,4 @@
-package q14681_»çºÐ¸é°í¸£±â;
+package q14681_ì‚¬ë¶„ë©´ê³ ë¥´ê¸°;
 
 import java.io.IOException;
 import java.util.Scanner;

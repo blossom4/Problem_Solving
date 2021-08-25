@@ -1,4 +1,4 @@
-package q5622_´ÙÀÌ¾ó;
+package q5622_ë‹¤ì´ì–¼;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ¹®ÀÚ c°¡ ¸î¹ø ´ÙÀÌ¾ó¿¡ Á¸ÀçÇÏ´Â ¾ËÆÄºªÀÎÁö ±¸ÇÏ´Â ÇÔ¼öÀÌ´Ù.
+	// ë¬¸ì cê°€ ëª‡ë²ˆ ë‹¤ì´ì–¼ì— ì¡´ì¬í•˜ëŠ” ì•ŒíŒŒë²³ì¸ì§€ êµ¬í•˜ëŠ” í•¨ìˆ˜ì´ë‹¤.
 	public static int getNumber(char c) {
 		if (c <= 'C') return 2;
 		else if (c <= 'F') return 3;
@@ -25,7 +25,7 @@ public class Main {
 		char[] str = input.toCharArray();
 		int total = 0;
 		
-		// ÀÔ·Â¹ŞÀº ¾ËÆÄºªÀÌ ÀÖ´Â ´ÙÀÌ¾óº¸´Ù +1ÃÊ¾¿ ´õ °É¸®¹Ç·Î °¢°¢ÀÇ ´ÙÀÌ¾ó +1 ¾¿ ¸ğµÎ ´õÇÑ´Ù.
+		// ì…ë ¥ë°›ì€ ì•ŒíŒŒë²³ì´ ìˆëŠ” ë‹¤ì´ì–¼ë³´ë‹¤ +1ì´ˆì”© ë” ê±¸ë¦¬ë¯€ë¡œ ê°ê°ì˜ ë‹¤ì´ì–¼ +1 ì”© ëª¨ë‘ ë”í•œë‹¤.
 		for (int i = 0; i < input.length(); i++) {
 			total += getNumber(str[i]) + 1;
 		}

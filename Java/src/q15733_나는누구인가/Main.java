@@ -1,4 +1,4 @@
-package q15733_³ª´Â´©±¸ÀÎ°¡;
+package q15733_ë‚˜ëŠ”ëˆ„êµ¬ì¸ê°€;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package q10870_ÇÇº¸³ªÄ¡¼ö5;
+package q10870_í”¼ë³´ë‚˜ì¹˜ìˆ˜5;
 
 import java.io.BufferedReader;
 import java.io.IOException;

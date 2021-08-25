@@ -1,4 +1,4 @@
-package q10872_ÆÑÅä¸®¾ó;
+package q10872_íŒ©í† ë¦¬ì–¼;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ÆÑÅä¸®¾ó Àç±ÍÇÔ¼ö
+	// íŒ©í† ë¦¬ì–¼ ìž¬ê·€í•¨ìˆ˜
 	public static int factorial(int n) {
 		if (n == 0) return 1;
 		else if (n < 2) return n;

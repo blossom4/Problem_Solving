@@ -1,4 +1,4 @@
-package q10430_³ª¸ÓÁö;
+package q10430_ë‚˜ë¨¸ì§€;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,8 +8,8 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
 		
-		// JAVA¿¡¼­´Â ÀÔ·ÂÀ» ¹ŞÀ» ¶§ µû·Î °ø¹éÃ³¸®¸¦ ÇØÁÙÇÊ¿ä¾øÀÌ
-		// ÀÚµ¿À¸·Î °ø¹éÀ» ±âÁØÀ¸·Î °¢°¢ÀÇ º¯¼ö¿¡ ÀÔ·ÂÀÌµÈ´Ù.
+		// JAVAì—ì„œëŠ” ì…ë ¥ì„ ë°›ì„ ë•Œ ë”°ë¡œ ê³µë°±ì²˜ë¦¬ë¥¼ í•´ì¤„í•„ìš”ì—†ì´
+		// ìë™ìœ¼ë¡œ ê³µë°±ì„ ê¸°ì¤€ìœ¼ë¡œ ê°ê°ì˜ ë³€ìˆ˜ì— ì…ë ¥ì´ëœë‹¤.
 		int A = input.nextInt();
 		int B = input.nextInt();
 		int C = input.nextInt();

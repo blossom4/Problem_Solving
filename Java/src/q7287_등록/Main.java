@@ -1,4 +1,4 @@
-package q7287_µÓ∑œ;
+package q7287_Îì±Î°ù;
 
 import java.io.IOException;
 

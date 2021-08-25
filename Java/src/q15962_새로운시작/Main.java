@@ -1,4 +1,4 @@
-package q15962_»õ·Î¿î½ÃÀÛ;
+package q15962_ìƒˆë¡œìš´ì‹œì‘;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		System.out.println("ÆÄÀÌÆÃ!!");
+		System.out.println("íŒŒì´íŒ…!!");
 	}
 
 }

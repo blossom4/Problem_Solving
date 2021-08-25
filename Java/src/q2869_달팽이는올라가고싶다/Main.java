@@ -1,4 +1,4 @@
-package q2869_´ŞÆØÀÌ´Â¿Ã¶ó°¡°í½Í´Ù;
+package q2869_ë‹¬íŒ½ì´ëŠ”ì˜¬ë¼ê°€ê³ ì‹¶ë‹¤;
 
 import java.io.BufferedReader;
 import java.io.IOException;

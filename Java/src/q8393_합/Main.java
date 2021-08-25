@@ -1,4 +1,4 @@
-package q8393_ÇÕ;
+package q8393_í•©;
 
 import java.io.IOException;
 import java.util.Scanner;

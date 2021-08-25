@@ -1,4 +1,4 @@
-package q15964_�̻��ѱ�ȣ;
+package q15964_이상한기호;
 
 import java.io.BufferedReader;
 import java.io.IOException;

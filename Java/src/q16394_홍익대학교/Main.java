@@ -1,4 +1,4 @@
-package q16394_ȫ�ʹ��б�;
+package q16394_홍익대학교;
 
 import java.io.BufferedReader;
 import java.io.IOException;

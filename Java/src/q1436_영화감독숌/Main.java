@@ -1,4 +1,4 @@
-package q1436_¿µÈ­°¨µ¶¼ò;
+package q1436_ì˜í™”ê°ë…ìˆŒ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class Main {
 		int N = Integer.parseInt(br.readLine());
 		int endNumber = 666;
 		int cnt = 0;
-		// ÃÖ¼ÒÀÇ Á¾¸»¼ıÀÚÀÎ 666ºÎÅÍ ½ÃÀÛÇØ¼­ 666ÀÌ Æ÷ÇÔµÈ ¼ıÀÚ¸¦ ¸¸³¯‹š cnt +1À» ÇÑ´Ù.
+		// ìµœì†Œì˜ ì¢…ë§ìˆ«ìì¸ 666ë¶€í„° ì‹œì‘í•´ì„œ 666ì´ í¬í•¨ëœ ìˆ«ìë¥¼ ë§Œë‚ Â‹Âš cnt +1ì„ í•œë‹¤.
 		while (true) {
 			if (Integer.toString(endNumber).contains("666")) cnt++;
 			if (N == cnt) break;

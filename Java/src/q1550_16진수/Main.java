@@ -1,4 +1,4 @@
-package q1550_16Áø¼ö;
+package q1550_16ì§„ìˆ˜;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -7,15 +7,15 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
-		// 16Áø¼ö ¼ıÀÚ
+		// 16ì§„ìˆ˜ ìˆ«ì
 		String N_16 = "0123456789ABCDEF";
 		String N = input.next();
-		// ÀÏÀÇ ÀÚ¸®ºÎÅÍ 16¾¿ °öÇØ°¡¸ç ÀÚ¸®¼ö¸¦ ¿Ã¸®±â À§ÇØ 16Áø¼ö ¼ö¸¦ µÚÁı´Â´Ù.
+		// ì¼ì˜ ìë¦¬ë¶€í„° 16ì”© ê³±í•´ê°€ë©° ìë¦¬ìˆ˜ë¥¼ ì˜¬ë¦¬ê¸° ìœ„í•´ 16ì§„ìˆ˜ ìˆ˜ë¥¼ ë’¤ì§‘ëŠ”ë‹¤.
 		StringBuffer sbN = new StringBuffer(N);
 		String reverseN = sbN.reverse().toString();
 		int N_10 = 0;
 		
-		// ÀÏÀÇ ÀÚ¸®ºÎÅÍ ÇØ´çÇÏ´Â ¹®ÀÚÀÇ index°¡ 10Áø¼ö·Î º¯È¯ÇÑ ¼ö¿Í °°´Ù.
+		// ì¼ì˜ ìë¦¬ë¶€í„° í•´ë‹¹í•˜ëŠ” ë¬¸ìì˜ indexê°€ 10ì§„ìˆ˜ë¡œ ë³€í™˜í•œ ìˆ˜ì™€ ê°™ë‹¤.
 		for (int i = 0; i < reverseN.length(); i++) {
 			N_10 += N_16.indexOf(reverseN.charAt(i)) * Math.pow(16, i);
 		}

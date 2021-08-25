@@ -1,9 +1,8 @@
-package q1193_ºÐ¼öÃ£±â;
+package q1193_ë¶„ìˆ˜ì°¾ê¸°;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Main {
 

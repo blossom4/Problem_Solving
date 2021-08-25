@@ -1,4 +1,4 @@
-package q4153_Á÷°¢»ï°¢Çü;
+package q4153_ì§ê°ì‚¼ê°í˜•;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,11 +18,11 @@ public class Main {
 			int b = Integer.parseInt(input[1]);
 			int c = Integer.parseInt(input[2]);
 			int[] arr = {a, b, c};
-			// 0 0 0 °ªÀÌ µé¾î¿À¸é ¹İº¹¹®À» Á¾·áÇÑ´Ù.
+			// 0 0 0 ê°’ì´ ë“¤ì–´ì˜¤ë©´ ë°˜ë³µë¬¸ì„ ì¢…ë£Œí•œë‹¤.
 			if (a == 0 && b == 0 && c == 0) break;
 			
 			Arrays.sort(arr);
-			// ÇÇÅ¸°í¶ó½ºÀÇ Á¤¸®·Î Á¶°ÇÀ» °Ë»çÇÕ¤¤´Ù.
+			// í”¼íƒ€ê³ ë¼ìŠ¤ì˜ ì •ë¦¬ë¡œ ì¡°ê±´ì„ ê²€ì‚¬í•©ã„´ë‹¤.
 			if (Math.pow(arr[0], 2) + Math.pow(arr[1], 2) ==  Math.pow(arr[2], 2)) {
 				results.add("right");
 			} else {

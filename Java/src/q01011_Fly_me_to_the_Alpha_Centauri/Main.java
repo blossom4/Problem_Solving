@@ -1,4 +1,4 @@
-package q1011_Fly_me_to_the_Alpha_Centauri;
+package q01011_Fly_me_to_the_Alpha_Centauri;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,17 +11,17 @@ public class Main {
 		int T = Integer.parseInt(br.readLine());
 		String[] result = new String[T];
 		
-		// TestCase T¸¸Å­ ¹İº¹
+		// TestCase Të§Œí¼ ë°˜ë³µ
 		for (int t = 0; t < T; t++) {
 			String[] input = br.readLine().split(" ");
 			int x = Integer.parseInt(input[0]);
 			int y = Integer.parseInt(input[1]);
-			// °¡¾ßÇÏ´Â°Å¸® y - x ÀÇ Á¦°ö±Ù °ªÀ» ¿Ã¸²ÇÑ °ª n
-			// µµÂøÇÏ·Á¸é 2n - 1¸¸Å­ ÀÌµ¿È½¼ö°¡ ÇÊ¿äÇÏ´Ù.
+			// ê°€ì•¼í•˜ëŠ”ê±°ë¦¬ y - x ì˜ ì œê³±ê·¼ ê°’ì„ ì˜¬ë¦¼í•œ ê°’ n
+			// ë„ì°©í•˜ë ¤ë©´ 2n - 1ë§Œí¼ ì´ë™íšŸìˆ˜ê°€ í•„ìš”í•˜ë‹¤.
 			double n = Math.ceil(Math.sqrt((double)(y - x)));
 			int move = 2 * (int)n - 1;
 			
-			// ¿ÏÀü Á¦°ö¼ö °£ÀÇ °£°İÀÇ Æò±Õ°ªº¸´Ù Å©¸é 2n - 1, ÀÛÀ¸¸é 2n - 2¸¸Å­ ÃÖ¼Ò ÀÌµ¿È½¼ö°¡ ÇÊ¿äÇÏ´Ù.
+			// ì™„ì „ ì œê³±ìˆ˜ ê°„ì˜ ê°„ê²©ì˜ í‰ê· ê°’ë³´ë‹¤ í¬ë©´ 2n - 1, ì‘ìœ¼ë©´ 2n - 2ë§Œí¼ ìµœì†Œ ì´ë™íšŸìˆ˜ê°€ í•„ìš”í•˜ë‹¤.
 			double avg = (n * n + (n - 1) * (n - 1)) / 2;
 			if (avg < y - x) result[t] = Integer.toString(move);
 			else result[t] = Integer.toString(move - 1);

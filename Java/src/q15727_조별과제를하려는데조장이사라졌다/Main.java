@@ -1,4 +1,4 @@
-package q15727_Á¶º°°úÁ¦¸¦ÇÏ·Á´Âµ¥Á¶ÀåÀÌ»ç¶óÁ³´Ù;
+package q15727_ì¡°ë³„ê³¼ì œë¥¼í•˜ë ¤ëŠ”ë°ì¡°ì¥ì´ì‚¬ë¼ì¡Œë‹¤;
 
 import java.io.BufferedReader;
 import java.io.IOException;

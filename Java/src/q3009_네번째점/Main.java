@@ -1,4 +1,4 @@
-package q3009_³×¹øÂ°Á¡;
+package q3009_ë„¤ë²ˆì§¸ì ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,19 +13,19 @@ public class Main {
 		String x = "";
 		String y = "";
 		
-		// ¼¼ ÁÂÇ¥ÀÇ x, y°ªÀ» °¢°¢ ´Ù¸¥ ¹è¿­¿¡ ÀúÀåÇÑ´Ù.
+		// ì„¸ ì¢Œí‘œì˜ x, yê°’ì„ ê°ê° ë‹¤ë¥¸ ë°°ì—´ì— ì €ì¥í•œë‹¤.
 		for (int i = 0; i < 3; i++) {
 			String[] input = br.readLine().split(" ");
 			xArr[i] = input[0];
 			yArr[i] = input[1];
 		}
 		
-		// °°Àº xÁÂÇ¥°¡ µÎ °³¾¿ ÀÖ¾î¾ß Á÷»ç°¢ÇüÀÌ µÇ¹Ç·Î ÇÏ³ª¸¸ ÀÖ´Â °ªÀ» String x¿¡ ³Ö´Â´Ù.
+		// ê°™ì€ xì¢Œí‘œê°€ ë‘ ê°œì”© ìˆì–´ì•¼ ì§ì‚¬ê°í˜•ì´ ë˜ë¯€ë¡œ í•˜ë‚˜ë§Œ ìˆëŠ” ê°’ì„ String xì— ë„£ëŠ”ë‹¤.
 		if (xArr[0].equals(xArr[1])) x += xArr[2];
 		else if (xArr[0].equals(xArr[2])) x += xArr[1];
 		else x += xArr[0];
 		
-		// °°Àº ¤ËÁÂÇ¥°¡ µÎ °³¾¿ ÀÖ¾î¾ß Á÷»ç°¢ÇüÀÌ µÇ¹Ç·Î ÇÏ³ª¸¸ ÀÖ´Â °ªÀ» String ¤Ë¿¡ ³Ö´Â´Ù.
+		// ê°™ì€ ã…›ì¢Œí‘œê°€ ë‘ ê°œì”© ìˆì–´ì•¼ ì§ì‚¬ê°í˜•ì´ ë˜ë¯€ë¡œ í•˜ë‚˜ë§Œ ìˆëŠ” ê°’ì„ String ã…›ì— ë„£ëŠ”ë‹¤.
 		if (yArr[0].equals(yArr[1])) y += yArr[2];
 		else if (yArr[0].equals(yArr[2])) y += yArr[1];
 		else y += yArr[0];

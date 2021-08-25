@@ -1,4 +1,4 @@
-package q17295_¿£µå°ÔÀÓ½ºÆ÷ÀÏ·¯;
+package q17295_ì—”ë“œê²Œì„ìŠ¤í¬ì¼ëŸ¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;

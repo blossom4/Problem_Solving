@@ -1,4 +1,4 @@
-package q1271_¾öÃ»³­ºÎÀÚ2;
+package q1271_ì—„ì²­ë‚œë¶€ì2;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -8,13 +8,13 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
-		// BigInteger ¹«ÇÑÈ÷  Å« ¼ö¸¦ ÀÔ·ÂÇÒ ¶§ »ç¿ëÇÑ´Ù.
+		// BigInteger ë¬´í•œíˆ  í° ìˆ˜ë¥¼ ì…ë ¥í•  ë•Œ ì‚¬ìš©í•œë‹¤.
 		BigInteger n = input.nextBigInteger();
 		BigInteger m = input.nextBigInteger();
 		
-		// ¸ò
+		// ëª«
 		System.out.println(n.divide(m));
-		// ³ª¸ÓÁö
+		// ë‚˜ë¨¸ì§€
 		System.out.println(n.mod(m));
 	}
 }

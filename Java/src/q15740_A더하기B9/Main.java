@@ -1,4 +1,4 @@
-package q15740_A´õÇÏ±âB_9;
+package q15740_Aë”í•˜ê¸°B9;
 
 import java.io.BufferedReader;
 import java.io.IOException;

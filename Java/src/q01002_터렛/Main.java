@@ -1,4 +1,4 @@
-package q1002_ÅÍ·¿;
+package q01002_í„°ë ›;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Main {
 	
-	// µÎ ÁÂÇ¥ (x1, y1) °ú (x2, y2) »çÀÌÀÇ °Å¸®¸¦ ±¸ÇÏ´Â ÇÔ¼ö
+	// ë‘ ì¢Œí‘œ (x1, y1) ê³¼ (x2, y2) ì‚¬ì´ì˜ ê±°ë¦¬ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜
 	public static double getDistance(int x1, int y1, int x2, int y2) {
 		double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 		
@@ -28,15 +28,15 @@ public class Main {
 			int y2 = Integer.parseInt(input[4]);
 			int r2 = Integer.parseInt(input[5]);
 			
-			// µÎ°³ÀÇ °°Àº ¿øÀÎ °æ¿ì
+			// ë‘ê°œì˜ ê°™ì€ ì›ì¸ ê²½ìš°
 			if (x1 == x2 && y1 == y2 && r1 == r2) results.add("-1");
-			// ¸Ö¾î¼­ ¾È¸¸³ª´Â °æ¿ì
+			// ë©€ì–´ì„œ ì•ˆë§Œë‚˜ëŠ” ê²½ìš°
 			else if (getDistance(x1, y1, x2, y2) > r1 + r2) results.add("0");
-			// Å« ¿øÀÇ ³»ºÎ¿¡ ÀÛÀº ¿øÀÌ µé¾î°¡ÀÖ¾î¼­ ¾È¸¸³ª´Â °æ¿ì
+			// í° ì›ì˜ ë‚´ë¶€ì— ìž‘ì€ ì›ì´ ë“¤ì–´ê°€ìžˆì–´ì„œ ì•ˆë§Œë‚˜ëŠ” ê²½ìš°
 			else if (getDistance(x1, y1, x2, y2) < Math.abs(r1 - r2)) results.add("0");
-			// ¿ÜÁ¢ÇÑ °æ¿ì
+			// ì™¸ì ‘í•œ ê²½ìš°
 			else if (getDistance(x1, y1, x2, y2) == r1 + r2) results.add("1");
-			// ³»Á¢ÇÑ °æ¿ì
+			// ë‚´ì ‘í•œ ê²½ìš°
 			else if (getDistance(x1, y1, x2, y2) == Math.abs(r1 - r2)) results.add("1");
 			else results.add("2");
 		}

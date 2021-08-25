@@ -1,4 +1,4 @@
-package q16430_Á¦¸®¿ÍÅè;
+package q16430_ì œë¦¬ì™€í†°;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,10 +1,10 @@
-package q14645_¿ÍÀÌ¹ö½ººÎ¸ªºÎ¸ª;
+package q14645_ì™€ì´ë²„ìŠ¤ë¶€ë¦‰ë¶€ë¦‰;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("ºñ¿ÍÀÌ");
+		System.out.println("ë¹„ì™€ì´");
 	}
 
 }

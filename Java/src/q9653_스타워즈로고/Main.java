@@ -1,4 +1,4 @@
-package q9653_½ºÅ¸¿öÁî·Î°í;
+package q9653_ìŠ¤íƒ€ì›Œì¦ˆë¡œê³ ;
 
 public class Main {
 

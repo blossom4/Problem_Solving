@@ -1,4 +1,4 @@
-package q2231_ºĞÇØÇÕ;
+package q2231_ë¶„í•´í•©;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ºĞÇØÇÕÀ» ±¸ÇÏ´Â ÇÔ¼ö
+	// ë¶„í•´í•©ì„ êµ¬í•˜ëŠ” í•¨ìˆ˜
 	public static int getCalculation(int n) {
 		int sum = n;
 		while (n > 0) {
@@ -22,8 +22,8 @@ public class Main {
 		int N = Integer.parseInt(br.readLine());
 		int result = 0;
 		
-		// 1ºÎÅÍ ºĞÇØÇÕÀÌ NÀÌ µÇ´ÂÁö °Ë»çÇÏ°í ¸¸Á·ÇÏ¸é break;
-		// 1ºÎÅÍ °Ë»çÇÏ¹Ç·Î ÃÖÃÊ·Î ¸¸Á·ÇÏ´Â »ı¼ºÀÚ°¡ ÃÖ¼Ò°ªÀÌ´Ù.
+		// 1ë¶€í„° ë¶„í•´í•©ì´ Nì´ ë˜ëŠ”ì§€ ê²€ì‚¬í•˜ê³  ë§Œì¡±í•˜ë©´ break;
+		// 1ë¶€í„° ê²€ì‚¬í•˜ë¯€ë¡œ ìµœì´ˆë¡œ ë§Œì¡±í•˜ëŠ” ìƒì„±ìê°€ ìµœì†Œê°’ì´ë‹¤.
 		for (int i = 1; i < N + 1; i++) {
 			if (getCalculation(i) == N) {
 				result = i;

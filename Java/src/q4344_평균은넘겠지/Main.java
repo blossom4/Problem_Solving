@@ -1,4 +1,4 @@
-package q4344_Æò±ÕÀº³Ñ°ÚÁö;
+package q4344_í‰ê· ì€ë„˜ê² ì§€;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,25 +17,25 @@ public class Main {
 			float average = 0;
 			float result = 0;
 			
-			// ÇĞ»ıµéÀÇ Á¡¼öÀÇ ÃÑÇÕÀ» ArrayList¿¡ Ãß°¡ÇÏ¸é¼­ ´õÇÑ´Ù.
+			// í•™ìƒë“¤ì˜ ì ìˆ˜ì˜ ì´í•©ì„ ArrayListì— ì¶”ê°€í•˜ë©´ì„œ ë”í•œë‹¤.
 			for (int j = 0; j < studentNumber; j++) {
 				int studentScore = input.nextInt();
 				scores.add(studentScore);
 				sum += studentScore;
 			}
 		
-			// Æò±ÕÁ¡¼ö¸¦ ±¸ÇÑ´Ù.
+			// í‰ê· ì ìˆ˜ë¥¼ êµ¬í•œë‹¤.
 			average = sum / studentNumber;
 			
-			// Æò±ÕÁ¡¼ö¸¦ ³Ñ´Â ÇĞ»ıÀÇ ¼ö¸¦ ±¸ÇÑ´Ù.
+			// í‰ê· ì ìˆ˜ë¥¼ ë„˜ëŠ” í•™ìƒì˜ ìˆ˜ë¥¼ êµ¬í•œë‹¤.
 			for (int j = 0; j < studentNumber; j++) {
 				if (scores.get(j) > average) count++;
 			}
 
-			// Æò±ÕÁ¡¼ö¸¦ ³Ñ´Â ÇĞ»ıÀÇ ºñÀ²À» ±¸ÇÑ´Ù.
+			// í‰ê· ì ìˆ˜ë¥¼ ë„˜ëŠ” í•™ìƒì˜ ë¹„ìœ¨ì„ êµ¬í•œë‹¤.
 			result = (float)count / (float)studentNumber * 100;
 			
-			// ¼Ò¼öÁ¡ ¼ÂÂ°ÀÚ¸®±îÁö Ãâ·ÂÇÏ°í ArrayList¸¦ ÃÊ±âÈ­ÇÑ´Ù.
+			// ì†Œìˆ˜ì  ì…‹ì§¸ìë¦¬ê¹Œì§€ ì¶œë ¥í•˜ê³  ArrayListë¥¼ ì´ˆê¸°í™”í•œë‹¤.
 			System.out.println(String.format("%.3f", result) + "%");
 			scores.removeAll(scores);		
 		}

@@ -1,4 +1,4 @@
-package q3003_Å·Äı·èºñ¼ó³ªÀÌÆ®Æù;
+package q3003_í‚¹í€¸ë£©ë¹„ìˆë‚˜ì´íŠ¸í°;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,8 +8,8 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// ¸ğµç ÇÇ½º°¡ ÀÖ´Â ¼¼Æ®ÀÇ °¢ °³¼ö¸¦ ÀúÀåÇÑ ¹è¿­À» ¸¸µé°í, 
-		// ÇöÀç °¡Áø °³¼ö¸¦ ¹Ş¾Æ Â÷ÀÌ¸¸Å­ missingNumbers ¹è¿­¿¡ ÀúÀåÇÑ´Ù.
+		// ëª¨ë“  í”¼ìŠ¤ê°€ ìˆëŠ” ì„¸íŠ¸ì˜ ê° ê°œìˆ˜ë¥¼ ì €ì¥í•œ ë°°ì—´ì„ ë§Œë“¤ê³ , 
+		// í˜„ì¬ ê°€ì§„ ê°œìˆ˜ë¥¼ ë°›ì•„ ì°¨ì´ë§Œí¼ missingNumbers ë°°ì—´ì— ì €ì¥í•œë‹¤.
 		int[] fullSet = {1, 1, 2, 2, 2, 8};
 		String[] pieceNumbers = br.readLine().split(" ");
 		String[] missingNumbers = new String[6];

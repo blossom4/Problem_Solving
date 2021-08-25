@@ -1,4 +1,4 @@
-package q1316_±×·ì´Ü¾îÃ¼Ä¿;
+package q1316_ê·¸ë£¹ë‹¨ì–´ì²´ì»¤;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,19 +13,19 @@ public class Main {
 		int N = Integer.parseInt(br.readLine());
 		int count = 0;
 		
-		// testcase N°³¸¸Å­ ¹İº¹
+		// testcase Nê°œë§Œí¼ ë°˜ë³µ
 		for (int t = 0; t < N; t++) {
-			// ÀÔ·Â¹ŞÀº ´Ü¾î¸¦ char·Î ºĞ¸®ÇØ¼­ word ¹è¿­¿¡ ³Ö´Â´Ù.
+			// ì…ë ¥ë°›ì€ ë‹¨ì–´ë¥¼ charë¡œ ë¶„ë¦¬í•´ì„œ word ë°°ì—´ì— ë„£ëŠ”ë‹¤.
 			char[] word = br.readLine().toCharArray();
-			// ÇÑ¹ø ³ª¿Â alphabetµéÀ» ³Ö¾îµÎ°í ÀÌÈÄ¿¡ ¶Ç ³ª¿À´ÂÁö¸¦ È®ÀÎÇÒ ArrayList
+			// í•œë²ˆ ë‚˜ì˜¨ alphabetë“¤ì„ ë„£ì–´ë‘ê³  ì´í›„ì— ë˜ ë‚˜ì˜¤ëŠ”ì§€ë¥¼ í™•ì¸í•  ArrayList
 			ArrayList<Character> charArr = new ArrayList<Character>();
 			
 			int i = 0;
 			while (i < word.length) {
 				
-				// ÇöÀç alphabetÀÌ ArrayList¿¡ ÀÌ¹Ì ÀÖ´Ù¸é ±×·ì´Ü¾î°¡ ¾Æ´Ï¹Ç·Î break
+				// í˜„ì¬ alphabetì´ ArrayListì— ì´ë¯¸ ìˆë‹¤ë©´ ê·¸ë£¹ë‹¨ì–´ê°€ ì•„ë‹ˆë¯€ë¡œ break
 				if (charArr.contains(word[i])) break;		
-				// ÇöÀç alphabet°ú ´ÙÀ½ indexÀÇ alphabetÀÌ °°¾Æ¸é i¸¦ +1¾¿ ÇØÁÖ¸é¼­ Áö³ªÄ£´Ù.
+				// í˜„ì¬ alphabetê³¼ ë‹¤ìŒ indexì˜ alphabetì´ ê°™ì•„ë©´ ië¥¼ +1ì”© í•´ì£¼ë©´ì„œ ì§€ë‚˜ì¹œë‹¤.
 				while (true) {
 					if (i < word.length - 1 && word[i] == word[i + 1]) {
 						i++;
@@ -33,9 +33,9 @@ public class Main {
 					}
 					break;
 				}
-				// ¸ğµÎ Áö³ªÄ£ ÈÄ¿¡ ÇØ´ç alphabetÀ» ArrayList¿¡ ÀúÀåÇÑ´Ù.
+				// ëª¨ë‘ ì§€ë‚˜ì¹œ í›„ì— í•´ë‹¹ alphabetì„ ArrayListì— ì €ì¥í•œë‹¤.
 				charArr.add(word[i]);
-				// ¸¶Áö¸· ¾ËÆÄºª¿¡ µµ´ŞÇß´Ù¸é ±×·ì´Ü¾îÀÌ¹Ç·Î count +1
+				// ë§ˆì§€ë§‰ ì•ŒíŒŒë²³ì— ë„ë‹¬í–ˆë‹¤ë©´ ê·¸ë£¹ë‹¨ì–´ì´ë¯€ë¡œ count +1
 				if (i == word.length - 1) count++;
 				i++;
 			}

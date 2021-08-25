@@ -1,4 +1,4 @@
-package q9020_°ñµå¹ÙÈåÀÇÃßÃø;
+package q9020_ê³¨ë“œë°”íì˜ì¶”ì¸¡;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,12 +6,12 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	// ¿¡¶ó½ºÅäÅ×³×½ºÀÇ Ã¼ÀÇ ¿ø¸®¸¦ ÀÌ¿ëÇÏ¿© ¼Ò¼öÀÎÁö ¾Æ´ÑÁö ±¸ÇÏ´Â ÇÔ¼ö
+	// ì—ë¼ìŠ¤í† í…Œë„¤ìŠ¤ì˜ ì²´ì˜ ì›ë¦¬ë¥¼ ì´ìš©í•˜ì—¬ ì†Œìˆ˜ì¸ì§€ ì•„ë‹Œì§€ êµ¬í•˜ëŠ” í•¨ìˆ˜
 	public static boolean isPrimeNumber(int n) {
-		// ¿ÏÀüÁ¦°ö¼öÀÏ °æ¿ì false
+		// ì™„ì „ì œê³±ìˆ˜ì¼ ê²½ìš° false
 		if (Math.sqrt((double)n) == Math.ceil(Math.sqrt((double)n))) return false;
 		
-		// ¼Ò¼ö¸¦ ÆÇº°ÇÒ ÀÚ¿¬¼ö nÀÇ Á¦°ö±Ù ±îÁö¸¸ ³ª´©¾îº¸¸é µÈ´Ù.
+		// ì†Œìˆ˜ë¥¼ íŒë³„í•  ìì—°ìˆ˜ nì˜ ì œê³±ê·¼ ê¹Œì§€ë§Œ ë‚˜ëˆ„ì–´ë³´ë©´ ëœë‹¤.
 		for (int i = 2; i < Math.sqrt((double)n); i++) {
 			if (n % i == 0) return false;
 		}
@@ -22,13 +22,13 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
-		// °á°úµéÀ» ÀúÀåÇÒ Å©±â TÀÇ ArrayÀÌ´Ù.
+		// ê²°ê³¼ë“¤ì„ ì €ì¥í•  í¬ê¸° Tì˜ Arrayì´ë‹¤.
 		String[] results = new String[T];
 		
 		for (int tc = 0; tc < T; tc++) {
 			int n = Integer.parseInt(br.readLine());
-			// °ñµå¹ÙÈåÀÇ ÃßÃøÀ» ¸¸Á·ÇÏ´Â ¿©·¯°æ¿ìÀÇ ¼ö°¡ ÀÖ´Ù¸é Â÷ÀÌ°¡ ÀûÀº °ÍÀ» °á°ú·Î Ãâ·ÂÇØ¾ßÇÏ¹Ç·Î,
-			// Áß°£°ªºÎÅÍ ½ÃÀÛÇÏ¿© Â÷ÀÌ¸¦ ¹ú·Á³ª°¡¸é¼­ ¸¸Á·ÇÏ´Â °æ¿ì¸¦ Ã£´Â´Ù.
+			// ê³¨ë“œë°”íì˜ ì¶”ì¸¡ì„ ë§Œì¡±í•˜ëŠ” ì—¬ëŸ¬ê²½ìš°ì˜ ìˆ˜ê°€ ìˆë‹¤ë©´ ì°¨ì´ê°€ ì ì€ ê²ƒì„ ê²°ê³¼ë¡œ ì¶œë ¥í•´ì•¼í•˜ë¯€ë¡œ,
+			// ì¤‘ê°„ê°’ë¶€í„° ì‹œì‘í•˜ì—¬ ì°¨ì´ë¥¼ ë²Œë ¤ë‚˜ê°€ë©´ì„œ ë§Œì¡±í•˜ëŠ” ê²½ìš°ë¥¼ ì°¾ëŠ”ë‹¤.
 			int n1 = n / 2;
 			int n2 = n / 2;
 	
