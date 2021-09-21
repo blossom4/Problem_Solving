@@ -3,8 +3,6 @@ package q11047_동전0;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Main {
 	
