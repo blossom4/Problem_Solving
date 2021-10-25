@@ -12,25 +12,47 @@ public class Main {
 	
 	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	public static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-	public static ArrayList<Integer> input;
 	public static ArrayList<Integer> numbers;
+	public static ArrayList<String> results;
 	public static String line = "";
 	public static int N;
+	public static int start;
+	public static int value;
 
 	public static void main(String[] args) throws IOException{
 		
 		N = Integer.parseInt(br.readLine());
-		input = new ArrayList<Integer>();
 		numbers = new ArrayList<Integer>();
+		results = new ArrayList<String>();
+		start = 0;
 		
-		for (int i = 0; i < N; i++) {
-			input.add(Integer.parseInt(br.readLine()));
-			numbers.add(i + 1);
+		for (int j = 0; j < N; j++) {			
+			value = Integer.parseInt(br.readLine());
+			if (value > start) {
+				for (int i = start + 1; i < value + 1; i++) {
+					numbers.add(i);
+					results.add("+\n");
+					//bw.write(line + "+" + "\n");
+				}
+				
+				start = value;
+			} else if (numbers.get(numbers.size() - 1) != value) {
+				System.out.println("NO");
+				System.exit(0);
+			}
 			
+			numbers.remove(numbers.get(numbers.size() - 1));
+			results.add("-\n");
+			//bw.write(line + "-" + "\n");
+		
 		}
 		
-		System.out.println(input);
-		System.out.println(numbers);
+		for (int i = 0; i < results.size(); i++) {
+			bw.write(line + results.get(i));
+		}
+
+		bw.flush();
+		bw.close();
 	}
 
 }
