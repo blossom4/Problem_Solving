@@ -200,3 +200,223 @@ class Solution {
 }
 ```
 
+
+
+## #완전탐색
+
+### 3. 카펫
+
+```java
+import java.util.*;
+
+class Solution {
+    public int[] solution(int brown, int yellow) {
+        int[] answer = new int[2];
+        int total = brown + yellow;
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i < total + 1; i++) {
+            if (total % i == 0) {
+                numbers.add(i);
+            }
+        }
+        int mid1 = 0;
+        int mid2 = 0;
+        if (numbers.size() % 2 == 0) {
+            mid1 = (numbers.size() / 2) - 1;
+            mid2 = numbers.size() / 2;
+        } else {
+            mid1 = numbers.size() / 2;
+            mid2 = numbers.size() / 2;            
+        }
+        while (mid1 > 0) {
+            int width = numbers.get(mid2);
+            int height = numbers.get(mid1);
+            if (height * width == total && (width - 2) * (height - 2) == yellow) {
+                answer[0] = width;
+                answer[1] = height;
+                break;
+            }
+            mid1--;
+            mid2++;
+        }
+        // System.out.println(numbers);
+        return answer;
+    }
+}
+```
+
+
+
+
+
+## #탐욕법(Greedy)
+
+## 1. 체육복
+
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(int n, int[] lost, int[] reserve) {
+        int answer = 0;
+        int[] students = new int[n];
+        for (int i = 0; i < n; i++) {
+            students[i] = 1;
+        }
+        for (int i = 0; i < lost.length; i++) {
+            students[lost[i] - 1]--;
+        }
+        for (int i = 0; i < reserve.length; i++) {
+            students[reserve[i] - 1]++;
+        }
+        for (int i = 0; i < n; i++) {
+            if (students[i] == 0) {
+                if (i > 0 && students[i - 1] == 2) {
+                    students[i]++;
+                    students[i - 1]--;
+                } else if (i < n - 1 && students[i + 1] == 2) {
+                    students[i]++;
+                    students[i + 1]--;
+                }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (students[i] > 0) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+}
+```
+
+
+
+## 2. 조이스틱
+
+```java
+import java.util.*;
+
+class Solution {
+    public boolean isZero(int[] arr) {
+        int total = 0;
+        for (int i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+        
+        if (total == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public int moveRight(int[] arr, int index) {
+        int arrLength = arr.length;
+        if (arrLength - 1 == index) return 0;
+        else return index + 1;
+    }
+
+    public int moveLeft(int[] arr, int index) {
+        int arrLength = arr.length;
+        if (index == 0) return arr.length - 1;
+        else return index - 1;
+    }
+    
+    public int solution(String name) {
+        int answer = 0;
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int[] arr = new int[name.length()];
+        for (int i = 0; i < name.length(); i++) {
+            arr[i] = alphabet.indexOf(String.valueOf(name.charAt(i)));
+        }
+        
+        System.out.println(Arrays.toString(arr));
+        int index = 0;
+        int indexLeft = 0;
+        int indexRight = 0;
+        int right = 0;
+        int left = 0;
+        int countLeft = 0;
+        int countRight = 0;
+        int minValue = 21;
+        for (int i = 0; i < 10; i++) {
+            if (isZero(arr)) break;
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[moveRight(arr, indexRight)] != 0) {
+                    countRight++;
+                    indexRight++;
+                    break;
+                }
+            }
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[moveLeft(arr, indexLeft)] != 0) {
+                    System.out.println("INLLLLLL");
+                    countLeft++;
+                    indexLeft--;
+                    break;
+                }
+            }
+            // System.out.println("countRight: " + countRight);
+            // System.out.println("countLeft: " + countLeft);
+            // System.out.println("indexRight: " + indexRight);
+            // System.out.println("indexLeft: " + indexLeft);
+            int flag = 0;
+            if (countRight <= countLeft) {
+                minValue = countRight;
+                flag = 1;
+            } else {
+                minValue = countLeft;
+                flag = -1;
+            }
+            if (arr[index] <= 13) answer += arr[index];
+            else if (arr[index] > 13) answer += 26 - arr[index];
+            arr[index] = 0;
+            answer += minValue;
+            minValue = 21;
+            System.out.println("flag: " + flag);
+            if (flag > 0) index = indexRight;
+            else index = indexLeft;
+            indexRight = index;
+            indexLeft = index;
+            countRight = 0;
+            countLeft = 0;
+        }
+        return answer;
+    }
+}
+```
+
+
+
+
+
+### 3. 큰수 만들기
+
+```java
+import java.util.*;
+
+class Solution {
+    
+    public String solution(String number, int k) {
+        String answer = "";
+        String[] numberArr = number.split("");
+        int digit = numberArr.length - k;
+        int maxValue = -1;
+        int index = 0;
+        for (int i = 0; i < digit; i++) {
+            for (int j = index; j < i + k + 1; j++) {
+                int thisNumber = Integer.parseInt(numberArr[j]);
+				if (maxValue < thisNumber) {
+                    maxValue = thisNumber;
+                    index = j + 1;
+                }
+            }
+            answer += Integer.toString(maxValue);
+            maxValue = -1;
+        }
+        return answer;
+    }
+}
+```
+
